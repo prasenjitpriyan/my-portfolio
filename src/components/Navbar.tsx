@@ -1,36 +1,46 @@
-"use client"
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
+
+interface OuterLinks {
+  id: number;
+  href: string;
+  src: string;
+}
+
+let navLinks: Array<string> = ["works", "contact"];
+let outerLinks: OuterLinks[] = [
+  { id: Math.random(), href: "/linkedin", src: "/linkedin.svg" },
+  { id: Math.random(), href: "/linkedin", src: "/github.svg" },
+  { id: Math.random(), href: "/linkedin", src: "/stackoverflow.svg" },
+  { id: Math.random(), href: "/linkedin", src: "/dribbble.svg" },
+];
 
 const NavbarMain = () => {
-
   return (
     <header className="grid grid-cols-12 gap-4 ml-40 mr-40 mt-2">
-      <nav className="col-span-3 flex flex-row justify-start gap-4 mt-4">
-        <Link className="text-lg" href="works">Works</Link>
-        <Link className="text-lg" href="contact">Contact</Link>
-      </nav>
+      <ul className="col-span-3 flex flex-row justify-start gap-4 mt-4">
+        {navLinks.map((link, array) => (
+          <li key={array}>
+            <Link className="text-lg" href={`/${link}`}>
+              {link.charAt(0).toUpperCase() + link.substring(1)}
+            </Link>
+          </li>
+        ))}
+      </ul>
       <div className="col-span-6 flex justify-center">
         <Link href="/">
-          <img className="w-72" src='/logo.png' alt="My Logo" />
+          <img className="w-72" src="/logo.png" alt="My Logo" />
         </Link>
       </div>
       <div className="col-span-3 flex flex-row justify-end gap-4 mt-4">
-        <Link href="/">
-          <img className="w-6" src="/linkedin.svg" alt="Linkedin" />
-        </Link>
-        <Link href="/">
-          <img className="w-6" src="/github.svg" alt="Github" />
-        </Link>
-        <Link href="/">
-          <img className="w-6" src="/stackoverflow.svg" alt="Stack Overflow" />
-        </Link>
-        <Link href="/">
-          <img className="w-6" src="dribbble.svg" alt="Dribble" />
-        </Link>
+        {outerLinks.map((outerLink) => (
+          <Link key={outerLink.id} href={outerLink.href}>
+            <img className="w-6" src={outerLink.src} alt="Linkedin" />
+          </Link>
+        ))}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default NavbarMain
+export default NavbarMain;
