@@ -20,7 +20,7 @@ const Education = () => {
             <p>University of Kanpur</p>
           </div>
           <div>
-            <h1 className="text-2xl font-semibold">DOEACC "O" Level Course</h1>
+            <h1 className="text-2xl font-semibold">DOEACC O Level Course</h1>
             <p>Department of Information Technology,</p>
             <p>Ministry of Communications &</p>
             <p> Information Technology,</p>
