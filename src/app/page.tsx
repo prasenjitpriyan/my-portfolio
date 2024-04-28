@@ -1,4 +1,6 @@
+import Advantage from "@/components/Advantage";
 import HomePage from "@/components/Home";
+import Hr from "@/components/Hr";
 import NavbarMain from "@/components/Navbar";
 
 export default function Home() {
@@ -6,7 +8,9 @@ export default function Home() {
     <main className="min-h-screen bg-bg-primary">
       <NavbarMain />
       <HomePage />
-      <hr />
+      <Hr />
+      <Advantage />
+      <Hr />
     </main>
   );
 }
