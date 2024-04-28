@@ -42,7 +42,13 @@ const NavbarMain = () => {
       <div className="col-span-3 flex flex-row justify-end gap-4 mt-4">
         {outerLinks.map((outerLink) => (
           <Link key={outerLink.id} href={outerLink.href}>
-            <img className="w-6" src={outerLink.src} alt="Linkedin" />
+            <Image
+              className="w-6"
+              src={outerLink.src}
+              alt="Linkedin"
+              width="1000"
+              height="1000"
+            />
           </Link>
         ))}
       </div>
