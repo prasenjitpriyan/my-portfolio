@@ -1,4 +1,5 @@
 import Advantage from "@/components/Advantage";
+import Education from "@/components/Education";
 import HomePage from "@/components/Home";
 import Hr from "@/components/Hr";
 import NavbarMain from "@/components/Navbar";
@@ -10,6 +11,8 @@ export default function Home() {
       <HomePage />
       <Hr />
       <Advantage />
+      <Hr />
+      <Education />
       <Hr />
     </main>
   );
