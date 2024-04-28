@@ -7,7 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "bg-primary": "#fffefe",
+        "bg-secondary": "#f3f2f2",
+        "text-primary": "#020202",
+        "text-secondary": "#908d8d",
+        "hover-color": "#894ED6",
+      },
+    },
   },
   darkMode: "class",
   plugins: [],
