@@ -15,7 +15,7 @@ const HomePage = () => {
           <div className="flex flex-col justify-between gap-5">
             <h5 className="text-text-secondary">BIOGRAPHY</h5>
             <p className="text-xl font-semibold">
-              Work for money and code for passion! <br /> I'm Prasenjit, <br />
+              Work for money and code for passion! <br /> I am Prasenjit, <br />
               a MERN Stack Web Developer, <br /> based in India
             </p>
           </div>
@@ -44,7 +44,7 @@ const HomePage = () => {
                 alt="my"
                 width="1000"
                 height="1000"
-                className="object-cover object-center w[100%] h-[100%] rounded-full"
+                className="object-cover object-center w-[100%] h-[100%] rounded-full"
               />
             </div>
           </div>
