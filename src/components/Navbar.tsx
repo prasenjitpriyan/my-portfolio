@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface OuterLinks {
   id: number;
@@ -29,7 +30,13 @@ const NavbarMain = () => {
       </ul>
       <div className="col-span-6 flex justify-center">
         <Link href="/">
-          <img className="w-72" src="/logo.png" alt="My Logo" />
+          <Image
+            className="w-72"
+            src="/logo.png"
+            alt="My Logo"
+            width="1000"
+            height="1000"
+          />
         </Link>
       </div>
       <div className="col-span-3 flex flex-row justify-end gap-4 mt-4">
