@@ -2,6 +2,7 @@ import Advantage from "@/components/Advantage";
 import Education from "@/components/Education";
 import HomePage from "@/components/Home";
 import Hr from "@/components/Hr";
+import LatestProjects from "@/components/LatestProjects";
 import NavbarMain from "@/components/Navbar";
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
       <Advantage />
       <Hr />
       <Education />
+      <Hr />
+      <LatestProjects />
       <Hr />
     </main>
   );
