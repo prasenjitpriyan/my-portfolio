@@ -1,4 +1,5 @@
 import Advantage from "@/components/Advantage";
+import Carousels from "@/components/Carousels";
 import Education from "@/components/Education";
 import HomePage from "@/components/Home";
 import Hr from "@/components/Hr";
@@ -16,6 +17,8 @@ export default function Home() {
       <Education />
       <Hr />
       <LatestProjects />
+      <Hr />
+      <Carousels />
       <Hr />
     </main>
   );
