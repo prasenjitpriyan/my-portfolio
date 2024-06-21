@@ -1,27 +1,7 @@
-import Advantage from "@/components/Advantage";
-import Carousels from "@/components/Carousels";
-import Education from "@/components/Education";
-import Footer from "@/components/Footer";
-import HomePage from "@/components/Home";
-import Hr from "@/components/Hr";
-import LatestProjects from "@/components/LatestProjects";
-import NavbarMain from "@/components/Navbar";
+import React from "react";
 
-export default function Home() {
-  return (
-    <main className="min-h-screen bg-bg-primary">
-      <NavbarMain />
-      <HomePage />
-      <Hr />
-      <Advantage />
-      <Hr />
-      <Education />
-      <Hr />
-      <LatestProjects />
-      <Hr />
-      <Carousels />
-      <Hr />
-      <Footer />
-    </main>
-  );
-}
+const Home: React.FC = () => {
+  return <div>Home</div>;
+};
+
+export default Home;
