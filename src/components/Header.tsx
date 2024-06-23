@@ -33,22 +33,13 @@ function Navbar({ className }: { className?: string }) {
     >
       <div className="container">
         <Menu setActive={setActive}>
-          <Link
-            href={"/"}
-            className="link border-black border-b-0 hover:border-b-2"
-          >
+          <Link href={"/"} className="link">
             <MenuItem setActive={setActive} active={active} item="Home" />
           </Link>
-          <Link
-            href={"/works"}
-            className="link border-black border-b-0 hover:border-b-2"
-          >
+          <Link href={"/works"} className="link">
             <MenuItem setActive={setActive} active={active} item="Works" />
           </Link>
-          <Link
-            href={"/contact"}
-            className="link border-black border-b-0 hover:border-b-2"
-          >
+          <Link href={"/contact"} className="link">
             <MenuItem setActive={setActive} active={active} item="Contact" />
           </Link>
         </Menu>
