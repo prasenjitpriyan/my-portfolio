@@ -9,6 +9,7 @@ const Home: React.FC = () => {
       <Hero />
       <Text title="My Advantage" />
       <Advantage />
+      <Text title="Footer" />
     </main>
   );
 };

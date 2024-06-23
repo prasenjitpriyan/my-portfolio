@@ -42,21 +42,21 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#00adb52e_1px,transparent_1px),linear-gradient(to_bottom,#00adb52e_1px,transparent_1px)] bg-[size:14px_20px]"></div>
       <div className="flex flex-col justify-center items-center max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto text-first-900 @apply absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2">
         <div className="h-20">
-          <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold from-second-600 via-second-700 to-second-600 bg-gradient-to-r bg-clip-text text-transparent">
+          <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
             Innovative Solutions with JavaScript
           </h1>
         </div>
-        <h3 className="sub-one text-xl md:text-2xl text-first-600">
+        <h3 className="sub-one text-xl md:text-2xl text-first-200">
           Welcome! I&apos;m Prasenjit Das
         </h3>
-        <h3 className="sub-two text-xl md:text-2xl text-first-600">
+        <h3 className="sub-two text-xl md:text-2xl text-first-200">
           A JavaScript engineer
         </h3>
-        <p className="text-wrap text-sm md:text-md pt-5 text-first-900">
+        <p className="text-wrap text-sm md:text-md pt-5 text-first-100">
           Passionate about crafting cutting-edge web applications using the
           latest technologies.
         </p>
-        <p className="text-md md:text-xl text-green-600">
+        <p className="text-md md:text-xl text-green-400">
           Let&apos;s build something amazing together.
         </p>
       </div>
