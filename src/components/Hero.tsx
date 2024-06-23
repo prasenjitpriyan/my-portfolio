@@ -46,10 +46,10 @@ const Hero: React.FC = () => {
             Innovative Solutions with JavaScript
           </h1>
         </div>
-        <h3 className="sub-one text-md md:text-2xl text-second-600">
+        <h3 className="sub-one text-xl md:text-2xl text-first-600">
           Welcome! I&apos;m Prasenjit Das
         </h3>
-        <h3 className="sub-two text-md md:text-2xl text-second-600">
+        <h3 className="sub-two text-xl md:text-2xl text-first-600">
           A JavaScript engineer
         </h3>
         <p className="text-wrap text-sm md:text-md pt-5 text-first-900">
