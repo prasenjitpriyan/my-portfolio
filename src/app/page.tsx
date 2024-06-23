@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 
 const Home: React.FC = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       <Hero />
     </main>
   );
