@@ -10,7 +10,7 @@ import { cn } from "@/utils/cn";
 export const Header: React.FC = () => {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+      <Navbar className="top-3" />
     </div>
   );
 };
@@ -19,7 +19,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   useGSAP(() => {
     gsap.from(".link", {
-      y: -100,
+      y: -70,
       duration: 0.5,
       delay: 0.5,
       scale: 2,
@@ -33,13 +33,22 @@ function Navbar({ className }: { className?: string }) {
     >
       <div className="container">
         <Menu setActive={setActive}>
-          <Link href={"/"} className="link">
+          <Link
+            href={"/"}
+            className="link border-black border-b-0 hover:border-b-2"
+          >
             <MenuItem setActive={setActive} active={active} item="Home" />
           </Link>
-          <Link href={"/works"} className="link">
+          <Link
+            href={"/works"}
+            className="link border-black border-b-0 hover:border-b-2"
+          >
             <MenuItem setActive={setActive} active={active} item="Works" />
           </Link>
-          <Link href={"/contact"} className="link">
+          <Link
+            href={"/contact"}
+            className="link border-black border-b-0 hover:border-b-2"
+          >
             <MenuItem setActive={setActive} active={active} item="Contact" />
           </Link>
         </Menu>
