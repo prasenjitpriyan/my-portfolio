@@ -1,15 +1,9 @@
-"use client";
-
 import React from "react";
 import Hero from "@/components/Hero";
 import Text from "@/components/Text";
 import Advantage from "@/components/Advantage";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 const Home: React.FC = () => {
-  useGSAP(() => {});
-
   return (
     <main className="min-h-[100svh] overflow-x-hidden">
       <Hero />

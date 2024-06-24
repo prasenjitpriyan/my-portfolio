@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Cursor from "./Cursor";
 
 const Hero: React.FC = () => {
   const heading = useRef<HTMLInputElement | null>(null);
@@ -30,18 +31,6 @@ const Hero: React.FC = () => {
         delay: 0.5,
         scale: 1,
       });
-      gsap.set(".ball", { xPercent: -50, yPercent: -50 });
-      let targets = gsap.utils.toArray(".ball");
-      window.addEventListener("mousemove", (e) => {
-        gsap.to(targets, {
-          duration: 0.5,
-          x: e.clientX,
-          y: e.clientY,
-          ease: "power1.out",
-          overwrite: "auto",
-          stagger: 0.02,
-        });
-      });
     },
     { scope: heading }
   );
@@ -52,11 +41,7 @@ const Hero: React.FC = () => {
       ref={heading}
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#00adb52e_1px,transparent_1px),linear-gradient(to_bottom,#00adb52e_1px,transparent_1px)] bg-[size:14px_20px]"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+      <Cursor />
       <div className="flex flex-col justify-center items-center max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto text-first-900 @apply absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2">
         <div className="h-20">
           <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
