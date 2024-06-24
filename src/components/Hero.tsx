@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
       ref={heading}
     >
       <Grid />
-      <div className="flex flex-col justify-center items-center max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto text-first-900 @apply absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2">
+      <div className="flex flex-col justify-center items-center max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto  @apply absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2">
         <div className="h-20">
           <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
             Innovative Solutions with JavaScript
