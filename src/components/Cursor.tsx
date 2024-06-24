@@ -22,11 +22,11 @@ const Cursor: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-      <div className="ball bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+      <div className="ball lg:bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+      <div className="ball lg:bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+      <div className="ball lg:bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+      <div className="ball lg:bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+      <div className="ball lg:bg-second-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
     </React.Fragment>
   );
 };
