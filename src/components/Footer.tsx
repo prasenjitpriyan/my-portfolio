@@ -5,13 +5,15 @@ import { FaGithub } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
+import Grid from "./Grid";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <React.Fragment>
-      <footer className="h-[30svh] w-screen bg-slate-900 bg-[linear-gradient(to_right,#00adb52e_1px,transparent_1px),linear-gradient(to_bottom,#00adb52e_1px,transparent_1px)] bg-[size:14px_20px] relative">
+      <footer className="h-[30svh] w-screen bg-slate-900 relative">
+        <Grid />
         <div className="bg-transparent h-full w-full absolute z-10">
           <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
             <nav className="flex flex-wrap justify-center -mx-3 -my-3">

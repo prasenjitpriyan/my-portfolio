@@ -1,10 +1,12 @@
 import React from "react";
 import NotFoundSvg from "@/components/NotFoundSvg";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import Grid from "@/components/Grid";
 
 const NotFoundPage: React.FC = () => {
   return (
-    <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0 bg-slate-900 bg-[linear-gradient(to_right,#00adb52e_1px,transparent_1px),linear-gradient(to_bottom,#00adb52e_1px,transparent_1px)] bg-[size:14px_20px] border-b-8 border-second-400">
+    <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0 bg-slate-900 border-b-8 border-second-400 relative">
+      <Grid />
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center">
         <p className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider text-second-400">
           404

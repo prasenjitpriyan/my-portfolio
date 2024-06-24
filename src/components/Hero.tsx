@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useRef } from "react";
-import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Cursor from "./Cursor";
+import gsap from "gsap";
+import Grid from "./Grid";
 
 const Hero: React.FC = () => {
   const heading = useRef<HTMLInputElement | null>(null);
@@ -40,8 +40,7 @@ const Hero: React.FC = () => {
       className="relative h-[100svh] w-[100svw] bg-slate-900"
       ref={heading}
     >
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#00adb52e_1px,transparent_1px),linear-gradient(to_bottom,#00adb52e_1px,transparent_1px)] bg-[size:14px_20px]"></div>
-      <Cursor />
+      <Grid />
       <div className="flex flex-col justify-center items-center max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto text-first-900 @apply absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2">
         <div className="h-20">
           <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
