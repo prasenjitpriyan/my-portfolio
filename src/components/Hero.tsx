@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Grid from "./Grid";
+import LinkComponents from "./LinkComponents";
 
 const Hero: React.FC = () => {
   const heading = useRef<HTMLInputElement | null>(null);
@@ -41,25 +42,37 @@ const Hero: React.FC = () => {
       ref={heading}
     >
       <Grid />
-      <div className="flex flex-col justify-center items-center max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto  @apply absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2">
-        <div className="h-20">
-          <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
-            Innovative Solutions with JavaScript
-          </h1>
+      <div className="bg-transparent h-full w-full absolute z-10">
+        <div className="bg-slate-600 h-[90svh] w-[90svw] flex flex-col justify-center items-center leading-relaxed lg:leading-snug text-center mx-auto  absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2 rounded-xl">
+          <div className="grid grid-cols-1 relative w-full h-full p-5">
+            <div className="m-2 flex flex-col justify-between">
+              <div className=""></div>
+              <div>
+                <h1 className="text-lg sm:text-xl md:text-3xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
+                  Innovative Solutions with JavaScript
+                </h1>
+                <h3 className="sub-one text-base sm:text-lg md:text-xl xl:text-3xl text-first-200">
+                  Welcome! I&apos;m Prasenjit Das
+                </h3>
+                <h3 className="sub-two text-base sm:text-lg md:text-xl xl:text-3xl text-first-200">
+                  A JavaScript engineer
+                </h3>
+                <p className="text-wrap text-sm md:text-md pt-5 text-first-100">
+                  Passionate about crafting cutting-edge web applications using
+                  the latest technologies.
+                </p>
+                <p className="text-base sm:text-lg md:text-xl text-green-400">
+                  Let&apos;s build something amazing together.
+                </p>
+              </div>
+              <div className="relative">
+                <div className="absolute border-l-2 p-2 left-0 bottom-0 flex flex-col gap-2">
+                  <LinkComponents />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 className="sub-one text-xl md:text-2xl text-first-200">
-          Welcome! I&apos;m Prasenjit Das
-        </h3>
-        <h3 className="sub-two text-xl md:text-2xl text-first-200">
-          A JavaScript engineer
-        </h3>
-        <p className="text-wrap text-sm md:text-md pt-5 text-first-100">
-          Passionate about crafting cutting-edge web applications using the
-          latest technologies.
-        </p>
-        <p className="text-md md:text-xl text-green-400">
-          Let&apos;s build something amazing together.
-        </p>
       </div>
     </section>
   );
