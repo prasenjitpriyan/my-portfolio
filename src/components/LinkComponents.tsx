@@ -15,7 +15,7 @@ const LinkComponents: React.FC = () => {
         className="text-second-400 hover:text-second-500 "
       >
         <span className="sr-only">Linkedin</span>
-        <FaLinkedin className="w-6 h-6" />
+        <FaLinkedin className="w-4 h-4" />
       </Link>
       <Link
         href="https://github.com/prasenjitpriyan"
@@ -23,7 +23,7 @@ const LinkComponents: React.FC = () => {
         className="text-second-400 hover:text-second-500"
       >
         <span className="sr-only">Github</span>
-        <FaGithub className="w-6 h-6" />
+        <FaGithub className="w-4 h-4" />
       </Link>
       <Link
         href="https://x.com/constprasenjit"
@@ -31,7 +31,7 @@ const LinkComponents: React.FC = () => {
         className="text-second-400 hover:text-second-500"
       >
         <span className="sr-only">Twitter</span>
-        <FaTwitter className="w-6 h-6" />
+        <FaTwitter className="w-4 h-4" />
       </Link>
       <Link
         href="https://stackoverflow.com/users/21798146/prasenjitpriyan"
@@ -39,7 +39,7 @@ const LinkComponents: React.FC = () => {
         className="text-second-400 hover:text-second-500"
       >
         <span className="sr-only">Stack Overflow</span>
-        <FaStackOverflow className="w-6 h-6" />
+        <FaStackOverflow className="w-4 h-4" />
       </Link>
       <Link
         href="https://dribbble.com/PD420"
@@ -47,7 +47,7 @@ const LinkComponents: React.FC = () => {
         className="text-second-400 hover:text-second-500"
       >
         <span className="sr-only">Dribbble</span>
-        <FaDribbble className="w-6 h-6" />
+        <FaDribbble className="w-4 h-4" />
       </Link>
     </React.Fragment>
   );

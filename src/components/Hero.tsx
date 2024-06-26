@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Grid from "./Grid";
 import LinkComponents from "./LinkComponents";
+import PageLinkComponent from "./PageLinkComponent";
 
 const Hero: React.FC = () => {
   const heading = useRef<HTMLInputElement | null>(null);
@@ -32,6 +33,13 @@ const Hero: React.FC = () => {
         delay: 0.5,
         scale: 1,
       });
+      gsap.from(".link", {
+        y: -100,
+        duration: 0.5,
+        delay: 0.5,
+        scale: 2,
+        stagger: 0.5,
+      });
     },
     { scope: heading }
   );
@@ -46,9 +54,11 @@ const Hero: React.FC = () => {
         <div className="bg-slate-600 h-[90svh] w-[90svw] flex flex-col justify-center items-center leading-relaxed lg:leading-snug text-center mx-auto  absolute -translate-x-2/4 -translate-y-2/4 whitespace-nowrap left-2/4 top-2/4 gap-2 rounded-xl">
           <div className="grid grid-cols-1 relative w-full h-full p-5">
             <div className="m-2 flex flex-col justify-between">
-              <div className=""></div>
-              <div>
-                <h1 className="text-lg sm:text-xl md:text-3xl xl:text-5xl font-semibold from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
+              <div className="flex justify-center lg:justify-end items-center gap-5">
+                <PageLinkComponent className="link hover:border-b-2" />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h1 className="text-xl sm:2xl md:text-3xl xl:text-4xl font-semibold from-second-400 via-second-600 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
                   Innovative Solutions with JavaScript
                 </h1>
                 <h3 className="sub-one text-base sm:text-lg md:text-xl xl:text-3xl text-first-200">
@@ -66,7 +76,7 @@ const Hero: React.FC = () => {
                 </p>
               </div>
               <div className="relative">
-                <div className="absolute border-l-2 p-2 left-0 bottom-0 flex flex-col gap-2">
+                <div className="absolute border-l-2 p-2 left-0 bottom-0 flex flex-row xl:flex-col gap-2">
                   <LinkComponents />
                 </div>
               </div>

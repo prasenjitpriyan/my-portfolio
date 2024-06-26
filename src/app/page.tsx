@@ -4,6 +4,7 @@ import Text from "@/components/Text";
 import Advantage from "@/components/Advantage";
 import About from "@/components/About";
 import Cursor from "@/components/Cursor";
+import Footer from "@/components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Home: React.FC = () => {
       <Advantage />
       <Cursor />
       <Text title="Footer" />
-      <div className="h-[30svh] w-screen bg-transparent absolute z-10"></div>
+      <Footer />
     </main>
   );
 };
