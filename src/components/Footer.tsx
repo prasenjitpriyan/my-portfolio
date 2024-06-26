@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               </div>
             </nav>
             <div className="flex justify-center mt-8 space-x-6">
-              <LinkComponents />
+              <LinkComponents className="text-second-400 hover:text-second-500" />
             </div>
             <p className="mt-8 text-base leading-6 text-center text-second-400">
               prasenjitpriyan@icloud.com

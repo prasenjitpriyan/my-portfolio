@@ -40,6 +40,13 @@ const Hero: React.FC = () => {
         scale: 2,
         stagger: 0.5,
       });
+      gsap.from(".link2", {
+        y: -1000,
+        duration: 0.5,
+        delay: 0.5,
+        scale: 2,
+        stagger: 0.3,
+      });
     },
     { scope: heading }
   );
@@ -77,7 +84,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="relative">
                 <div className="absolute border-l-2 p-2 left-0 bottom-0 flex flex-row xl:flex-col gap-2">
-                  <LinkComponents />
+                  <LinkComponents className="link2 text-second-400 hover:text-second-500" />
                 </div>
               </div>
             </div>
