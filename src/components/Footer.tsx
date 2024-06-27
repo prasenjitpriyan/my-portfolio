@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Grid from "./Grid";
 import LinkComponents from "./LinkComponents";
 
 const Footer: React.FC = () => {
@@ -8,8 +7,7 @@ const Footer: React.FC = () => {
 
   return (
     <React.Fragment>
-      <footer className="h-[30svh] w-screen bg-slate-900 relative">
-        <Grid />
+      <footer className="h-[30svh] w-screen relative">
         <div className="bg-transparent h-full w-full absolute z-10">
           <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
             <nav className="flex flex-wrap justify-center -mx-3 -my-3">

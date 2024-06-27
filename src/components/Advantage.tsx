@@ -1,12 +1,7 @@
 import React from "react";
-import Grid from "./Grid";
 
 const Advantage: React.FC = () => {
-  return (
-    <div className="relative h-[100svh] w-[100svw] bg-slate-900">
-      <Grid />
-    </div>
-  );
+  return <div className="relative h-[100svh] w-[100svw]">Grid</div>;
 };
 
 export default Advantage;
