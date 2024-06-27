@@ -5,13 +5,32 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import LinkComponents from "./LinkComponents";
 import PageLinkComponent from "./PageLinkComponent";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const Hero: React.FC = () => {
+  const words = [
+    {
+      text: "Let's",
+    },
+    {
+      text: "build",
+    },
+    {
+      text: "something",
+    },
+    {
+      text: "amazing",
+    },
+    {
+      text: "together.",
+      className: "text-sm sm:text-2xl text-green-400",
+    },
+  ];
   const heading = useRef<HTMLInputElement | null>(null);
 
   useGSAP(
     () => {
-      gsap.from("h1, span", {
+      gsap.from("h1", {
         y: 80,
         opacity: 0,
         duration: 0.6,
@@ -56,28 +75,30 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 relative w-full h-full p-5">
           <div className="m-2 flex flex-col justify-between">
             <div className="flex justify-between items-center gap-5">
-              <h1 className="text-second-400 border-t-2 border-l-2 p-2">
-                <span>PD</span>
-              </h1>
+              <div className="text-second-400 border-t-2 border-l-2 p-2">
+                <h1>PD</h1>
+              </div>
               <PageLinkComponent className="link hover:border-b-2" />
             </div>
             <div className="flex flex-col gap-2">
-              <h1 className="text-base sm:2xl md:text-3xl xl:text-4xl font-bold uppercase from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
+              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-5xl font-bold uppercase from-second-400 via-second-500 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
                 Innovative Solutions with JavaScript
               </h1>
-              <h3 className="sub-one text-sm sm:text-lg md:text-xl xl:text-3xl text-first-200">
-                Welcome! I&apos;m Prasenjit Das
+              <h3 className="sub-one text-sm sm:text-xl md:text-2xl lg:text-4xl text-first-200">
+                Welcome!{" "}
+                <span className="text-green-400">I&apos;m Prasenjit Das</span>
               </h3>
-              <h3 className="sub-two text-sm sm:text-lg md:text-xl xl:text-3xl text-first-200">
-                A JavaScript engineer
+              <h3 className="sub-two text-sm sm:text-xl md:text-2xl lg:text-4xl text-first-200 flex gap-2 items-center justify-center">
+                A<span className="text-[#F0DB4F]">JavaScript</span>
+                engineer
               </h3>
-              <p className="text-wrap text-sm md:text-md pt-5 text-first-100">
+              <p className="text-wrap text-xs sm:text-lg md:text-xl pt-5 text-first-100">
                 Passionate about crafting cutting-edge web applications using
                 the latest technologies.
               </p>
-              <p className="text-base sm:text-lg md:text-xl text-green-400">
-                Let&apos;s build something amazing together.
-              </p>
+              <div className="flex flex-col items-center justify-center">
+                <TypewriterEffectSmooth words={words} />
+              </div>
             </div>
             <div className="relative">
               <div className="absolute border-l-2 border-b-2 p-2 left-0 bottom-0 flex flex-row xl:flex-col gap-2">
