@@ -6,6 +6,7 @@ import gsap from "gsap";
 import LinkComponents from "./LinkComponents";
 import PageLinkComponent from "./PageLinkComponent";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import Button from "./Button";
 
 const Hero: React.FC = () => {
   const words = [
@@ -103,6 +104,9 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute border-l-2 border-b-2 p-2 left-0 bottom-0 flex flex-row xl:flex-col gap-2">
                 <LinkComponents className="link2 text-second-400 hover:text-second-500" />
+              </div>
+              <div className="absolute right-0 bottom-0">
+                <Button />
               </div>
             </div>
           </div>
