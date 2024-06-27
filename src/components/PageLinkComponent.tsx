@@ -9,13 +9,13 @@ const PageLinkComponent: React.FC<PageLinkComponentProps> = ({ className }) => {
   return (
     <div className="flex justify-between gap-5 text-second-400">
       <Link href={"/"} className={className}>
-        Home
+        ../Home..
       </Link>
       <Link href={"/works"} className={className}>
-        Works
+        ../Works..
       </Link>
       <Link href={"/contact"} className={className}>
-        Contact
+        ../Contact..
       </Link>
     </div>
   );

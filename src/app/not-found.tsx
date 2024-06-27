@@ -6,7 +6,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 
 const NotFoundPage: React.FC = () => {
   return (
-    <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0 bg-slate-900 relative">
+    <div className="w-full h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0 bg-slate-900 relative overflow-x-hidden">
       <Grid />
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center lg:px-2 xl:px-0 text-center bg-transparent z-10">
         <p className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider text-second-400">

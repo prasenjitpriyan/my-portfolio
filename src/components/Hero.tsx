@@ -65,13 +65,13 @@ const Hero: React.FC = () => {
                 <PageLinkComponent className="link hover:border-b-2" />
               </div>
               <div className="flex flex-col gap-2">
-                <h1 className="text-xl sm:2xl md:text-3xl xl:text-4xl font-semibold from-second-400 via-second-600 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
+                <h1 className="text-base sm:2xl md:text-3xl xl:text-4xl font-semibold from-second-400 via-second-600 to-second-400 bg-gradient-to-r bg-clip-text text-transparent">
                   Innovative Solutions with JavaScript
                 </h1>
-                <h3 className="sub-one text-base sm:text-lg md:text-xl xl:text-3xl text-first-200">
+                <h3 className="sub-one text-sm sm:text-lg md:text-xl xl:text-3xl text-first-200">
                   Welcome! I&apos;m Prasenjit Das
                 </h3>
-                <h3 className="sub-two text-base sm:text-lg md:text-xl xl:text-3xl text-first-200">
+                <h3 className="sub-two text-sm sm:text-lg md:text-xl xl:text-3xl text-first-200">
                   A JavaScript engineer
                 </h3>
                 <p className="text-wrap text-sm md:text-md pt-5 text-first-100">
